@@ -51,5 +51,5 @@ The Jeep Information Website provides passengers with information about jeep col
 ## Contributors
 
 - Genesis D. Villareal.
-- Connerry L. TaNedo
+- Connerry L. Tañedo
 - Gregorio A. Abuda
