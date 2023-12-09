@@ -1,55 +1,51 @@
-# Jeep Information Website
+# Jeepney Information Website **Doobi**
 
-## Overview
-
-The Jeep Information Website provides passengers with information about jeep colors, names, and routes using the MapTiler API. Additionally, users can check the availability of jeeps at terminals.
+Welcome to the Jeepney Information System! This web application provides users with information about jeepneys, including routes displayed on a map through the MAPTILER API, jeepney details such as name, color, and maximum seats. Additionally, users can check the availability of jeepneys at different terminals and see the number of passengers already on board.
 
 ## Features
 
-### 1. Jeep Information
+### User Features
 
-- View a list of jeep colors, names, and routes.
-- Utilize the MapTiler API to display routes.
+- View information about jeepneys, including routes on the MAPTILER API, name, color, and maximum seats.
+- Check the availability of jeepneys at different terminals.
+- See the number of passengers inside a jeepney.
 
-### 2. Terminal Status
+### Admin Features
 
-- Check if a jeep is currently at a terminal.
-- Know the number of passengers on board.
-- Determine if the jeep is full or not.
+- Add, edit, and delete jeep information, including name, color, maximum seats, and MAPTILER API file.
+- Modify the number of passengers inside a jeepney.
+- Manage jeepney terminals.
 
-### 3. Admin Section
+## Technologies Used
 
-- Access an admin dashboard to manage jeeps.
-- Add, edit, or remove jeep information.
-- Update the status of jeeps at terminals.
+- HTML, CSS, and JavaScript for the frontend.
+- PHP for server-side functionality.
+- MySQL for the database.
 
-## Database
+## Getting Started
 
-- The website uses a MySQL database managed by XAMPP.
-- Import the provided SQL file (`jeepney-counter.sql`) into your XAMPP database.
-
-<!-- ## File Structure
-
-- `index.html`: Main page for passengers.
-- `admin.php`: Admin dashboard for managing jeeps.
-- `styles.css`: Stylesheet for the website.
-- `maptiler.js`: JavaScript file for integrating MapTiler API.
-- `db_config.php`: Configuration file for database connection. -->
-
-<!-- ## Setup
-
-1.  Clone the repository.
-2.  Import the SQL file into your XAMPP database.
-3.  Configure database connection in `db_config.php`.
-4.  Launch the website using XAMPP. -->
+1. Clone the repository: `git clone https://github.com/IvnVllrl/doobi-php.git`
+2. Navigate to the project directory: `cd doobi-php`
+3. Install XAMPP: [Download and install XAMPP](https://www.apachefriends.org/index.html).
+4. Place the entire project directory into the `htdocs` folder of your XAMPP installation.
+5. Start XAMPP and ensure that the Apache and MySQL services are running.
+6. Open phpMyAdmin and create a new database.
+7. Import the database structure by executing the SQL script:
+   - Open phpMyAdmin.
+   - Select the newly created database.
+   - Click on the "Import" tab.
+   - Choose the `jeepney-counter.sql` file from the project.
+   - Click "Go" to import the database structure.
+8. Configure the backend API endpoints in the frontend code to connect to your database.
+9. Access the application through your browser by navigating to `http://localhost/doobi`.
 
 ## Usage
 
-- Visit the website and explore jeep information.
-- Admins can log in to the admin section to manage jeeps.
+1. Users can explore jeepney information and terminal availability.
+2. Admins can log in to access the admin dashboard for managing jeepney details and terminals.
 
-## Contributors
+## Acknowledgments
 
-- Genesis D. Villareal.
-- Connerry L. Tañedo
-- Gregorio A. Abuda
+- Thanks to MAPTILER for providing the API for displaying jeepney routes on the map.
+
+Feel free to reach out if you have any questions or issues. Happy jeepney exploring!
