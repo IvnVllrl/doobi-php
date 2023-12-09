@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Regular";
+  src: url(../Font/Montserrat-Regular.ttf);
+}
+
+.main-content2 {
+  background: #001f3f;
+  color: #fff;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.left-column {
+  flex: 1;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-family: "Italic", sans-serif;
+}
+
+button {
+  font-family: "Regular", sans-serif;
+  font-size: 1rem;
+  border-radius: 1.0625rem;
+  border: none;
+  background: #f4496b;
+  color: #fff;
+  padding: 1.2rem 0.7rem;
+  cursor: pointer;
+  margin: 1.25rem 0;
+}
+
+button:hover {
+  background: #ce3d5a;
+}
+
+.right-column {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.route {
+  width: 31.25rem;
+  height: auto;
+  padding: 1rem;
+}

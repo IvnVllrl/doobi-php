@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Regular";
+  src: url(../Font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url(../Font/Montserrat-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(../Font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ExtraBold";
+  src: url(../Font/Montserrat-ExtraBold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Regular", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #fff;
+  padding: 0.9375rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "ExtraBold", sans-serif;
+}
+
+.logo img {
+  width: 9.375rem;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1.25rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #024b6a;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 1rem 0.625rem;
+  transition: color 0.3s ease;
+  border-radius: 1.5625rem;
+}
+
+nav ul li a:hover {
+  color: #000;
+}
+
+nav ul li a.active {
+  color: #fff;
+  background: #024b6a;
+}
+
+.main-content {
+  background: #001f3f;
+  color: #fff;
+  padding: 1.25rem 1.25rem 5rem 1.25rem;
+  border-radius: 1.25rem;
+  display: flex;
+  overflow: hidden;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  font-family: "Bold";
+}
+
+footer {
+  background-color: #fff;
+  color: #555;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  margin: 0 0.5em;
+  flex: 1;
+  text-align: center;
+}
+
+.footer-left img {
+  width: 9.375rem; /* Adjust the logo size */
+  height: auto;
+}
+
+.footer-left p {
+  color: #555;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 1em 1em 0 1em;
+}
+
+.footer-middle h2,
+.footer-right h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #024b6a;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 0.625rem;
+}
+
+.iconLogo {
+  width: 2.5rem;
+  height: auto;
+}

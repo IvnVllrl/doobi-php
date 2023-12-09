@@ -1,0 +1,133 @@
+.main-content2 {
+  background: #001f3f;
+  color: #fff;
+  padding: 1.25rem 1.25rem 5rem 1.25rem;
+  border-radius: 1.25rem;
+  display: flex;
+  overflow: hidden;
+  /* flex: 1; */
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.left-section {
+  width: 30%;
+  padding: 1.25rem;
+}
+
+.left-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #fff;
+}
+
+.right-section {
+  flex: 1;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.25rem;
+}
+
+.shape {
+  width: 50%;
+  height: 20em;
+  background-color: #6b9ed2;
+  border-radius: 1.5625rem;
+  margin: 1rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+.shape2 {
+  position: relative;
+  top: 1em;
+  width: 100%;
+  height: 20em;
+  max-height: 20em;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 1.5625rem;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+}
+
+.shape2::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.shape2::-webkit-scrollbar-thumb {
+  background-color: #024b6a;
+  border-radius: 0.625rem;
+}
+
+.shape2::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 0.625rem;
+}
+
+.shape h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  color: #001f3f;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.shape p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #001f3f;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.terminal-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.terminal-item {
+  color: #001f3f;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  border-bottom: 0.125rem solid #010101;
+  padding-bottom: 0.3125rem;
+  display: flex;
+  justify-content: center;
+}
+
+.shape2 .jeep-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem;
+  border-bottom: 0.0625rem solid #001f3f;
+}
+
+.shape2 .jeep-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.shape2 .jeep-counter {
+  margin: 0;
+}
+
+.shape2 .jeep-content .jeep-name {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}

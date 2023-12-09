@@ -1,0 +1,306 @@
+@font-face {
+  font-family: "Regular";
+  src: url(../Font/Montserrat-Regular.ttf);
+}
+
+button {
+  font-family: "Regular", sans-serif;
+}
+
+nav ul {
+  /* display: flex; */
+  align-items: center;
+}
+
+nav ul li button {
+  background: #f4496b;
+  text-decoration: none;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 1rem 0.625rem;
+  transition: color 0.3s ease;
+  border-radius: 0.625rem;
+  cursor: pointer;
+}
+
+nav ul li button:hover {
+  color: #024b6a;
+  background: #fff;
+}
+
+.explore-jeep {
+  margin-bottom: 1.25em;
+}
+
+.explore-jeep h1 {
+  margin: 0.5rem;
+}
+
+.add-jeep-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.addJeep {
+  font-size: 1rem;
+  border-radius: 1.0625rem;
+  border: none;
+  background: #f4496b;
+  color: #fff;
+  padding: 1.2rem 1.5rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.addJeep:hover {
+  background: #ce3d5a;
+}
+
+.jeep-data {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.625rem 1.25rem;
+}
+
+.shape {
+  width: 50%;
+  height: 20em;
+  background-color: #6b9ed2;
+  border-radius: 1.5625rem;
+  margin: 1rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+.shape2 {
+  position: relative;
+  top: 1em;
+  width: 100%;
+  height: 16em;
+  max-height: 18em;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 1.5625rem;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-direction: column;
+}
+
+.shape2::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+.shape2::-webkit-scrollbar-thumb {
+  background-color: #024b6a;
+  border-radius: 0.625rem;
+}
+
+.shape2::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  border-radius: 0.625rem;
+}
+
+.counter-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background 0.3s ease;
+  margin: 0.3125rem;
+  padding: 0.625rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter-button:hover {
+  background: #001f3f;
+  color: #fff;
+}
+
+.shape2 .jeep-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem;
+  border-bottom: 0.0625rem solid #001f3f;
+}
+
+.shape2 .jeep-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.shape2 .jeep-counter {
+  margin: 0;
+}
+
+.shape2 .jeep-content .jeep-name {
+  margin: 0;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.shape2 .edit-button {
+  background: #6b9ed2;
+  color: #fff;
+  border: none;
+  font-size: 1em;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.625rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.shape2 .edit-button:hover {
+  background: #024b6a;
+}
+
+.shape h1 {
+  font-size: 2.6rem;
+  text-align: center;
+  color: #001f3f;
+  margin: 1rem 0 0.5rem 0;
+  padding: 0;
+}
+
+.shape p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #001f3f;
+  margin: 0.5rem;
+  padding: 0;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fefefe;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border: 0.0625rem solid #888;
+  width: 50%;
+  position: relative;
+  text-align: center;
+  max-width: 50%; /* Adjust the max-width according to your needs */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 0.3125rem;
+  font-size: 1.2em;
+  color: #001f3f;
+}
+
+input,
+select {
+  width: 50%;
+  padding: 0.625rem;
+  margin-bottom: 1.25rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.3125rem;
+  resize: vertical;
+}
+
+.add-jeep {
+  /* flex: 1; */
+  width: 25%;
+  padding: 1em;
+  background: #f4496b;
+  color: #fff;
+  border: none;
+  border-radius: 1.5625rem;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.add-jeep:hover {
+  background: #ce3d5a;
+}
+
+form div.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.edit-jeep {
+  flex: 1;
+  width: 25%;
+  padding: 1em;
+  background: #6b9ed2;
+  color: #fff;
+  border: none;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+  margin: 1em;
+}
+
+.edit-jeep:hover {
+  background: #024b6a;
+}
+
+.delete-jeep {
+  flex: 1;
+  width: 25%;
+  padding: 1em;
+  background: #f4496b;
+  color: #fff;
+  border: none;
+  border-radius: 0.9375rem;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 1em;
+  transition: background 0.3s ease;
+}
+
+.delete-jeep:hover {
+  background: #ce3d5a;
+}

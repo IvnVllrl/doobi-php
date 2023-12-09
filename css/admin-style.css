@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Regular";
+  src: url(../Font/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Italic";
+  src: url(../Font/Montserrat-Italic.ttf);
+}
+
+@font-face {
+  font-family: "Bold";
+  src: url(../Font/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: "ExtraBold";
+  src: url(../Font/Montserrat-ExtraBold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Regular", sans-serif;
+  background: #f4f4f4;
+}
+
+.login-container {
+  width: 18.75rem;
+  margin: 6.25rem auto;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 30%;
+  margin: 0 auto;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  height: 4em;
+  padding: 0.625rem;
+  margin-bottom: 1rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 1.5625rem;
+  box-sizing: border-box;
+}
+
+#button {
+  font-family: "Regular", sans-serif;
+  width: 70%;
+  background: #3498db;
+  color: #fff;
+  padding: 0.625rem;
+  border: none;
+  border-radius: 3.125rem;
+  cursor: pointer;
+  font-size: 1em;
+  align-self: center; /* Add this line to center the button within the form */
+}
+
+#button:hover {
+  background: #217dbb;
+}
+
+#errorMessage {
+  display: none;
+  color: #ff6181;
+  margin-bottom: 1em;
+}
+
+.password-container {
+  position: relative;
+}
+
+#togglePassword {
+  position: absolute;
+  right: 0.9375rem;
+  top: 39%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background: none;
+  color: #000;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
+  padding: 0.3em 0.5em 0.6em 0.5em;
+}
+
+#togglePassword:hover {
+  background: #cccccc53;
+}
